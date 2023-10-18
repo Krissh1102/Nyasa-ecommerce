@@ -1,0 +1,16 @@
+export 'package:flutter/material.dart';
+export 'package:velocity_x/velocity_x.dart';
+export 'package:nyasa/constents/images.dart';
+export 'package:nyasa/Common_Widgets/applogo.dart';
+export 'package:google_fonts/google_fonts.dart';
+export 'package:get/get.dart';
+export 'package:nyasa/constents/strings.dart';
+export 'package:nyasa/firebase_options.dart';
+export 'package:nyasa/Common_Widgets/animation/animation_design.dart';
+export 'package:flutter/gestures.dart';
+export '../../Common_Widgets/animation/animation_model.dart';
+export '../../Common_Widgets/animation/splashscreen_controller.dart';
+export 'package:nyasa/themes/apptheme.dart';
+export 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+export 'package:firebase_auth/firebase_auth.dart';
+export 'package:flutter/src/rendering/box.dart';
