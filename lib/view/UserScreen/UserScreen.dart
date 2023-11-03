@@ -1,6 +1,6 @@
 import 'package:nyasa/constents/consts.dart';
 import 'package:nyasa/view/Login_Screen/login_screen.dart';
-import 'package:nyasa/view/Order_Now/OrderNowScreen.dart';
+
 import 'package:nyasa/view/Profile_Screen/notSignedIn.dart';
 import 'package:nyasa/view/Profile_Screen/profileScreen.dart';
 import 'package:nyasa/view/Home_Screen/HomeScreenBody.dart';
@@ -55,9 +55,7 @@ class _UserScreen extends State<UserScreen> {
             ListTile(
               leading: const Icon(Icons.feedback_outlined),
               title: const Text(' Help and Feedback '),
-              onTap: () {
-                Get.to(() => const OrderNowScreen());
-              },
+              onTap: () {},
             ),
             ListTile(
               leading: const Icon(Icons.login_outlined),

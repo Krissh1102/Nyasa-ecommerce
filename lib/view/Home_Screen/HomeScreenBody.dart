@@ -3,8 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:nyasa/constents/consts.dart';
 import 'package:nyasa/view/Categories_Screens/Rings_Screen/RingsScreen.dart';
 
-import 'package:nyasa/view/Home_Screen/Widgets/CategoryButton.dart';
-
 class HomeScreenBody extends StatefulWidget {
   const HomeScreenBody({super.key});
 
@@ -139,139 +137,15 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
               ),
             ],
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          const SizedBox(
-            height: 12,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
+          Stack(
             children: [
-              const Text(
-                '   Categories',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Row(
-                children: [
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CategoryButton(
-                      imagee: 'assets/images/ringImage.png',
-                      text: 'Rings',
-                      tap: () {
-                        Get.to(() => const RingsScreen());
-                      }),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CategoryButton(
-                      imagee: 'assets/images/ringImage.png',
-                      text: 'Rings',
-                      tap: () {
-                        Get.to(() => const RingsScreen());
-                      }),
-                ],
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Row(
-                children: [
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CategoryButton(
-                      imagee: 'assets/images/ringImage.png',
-                      text: 'Rings',
-                      tap: () {
-                        Get.to(() => const RingsScreen());
-                      }),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CategoryButton(
-                      imagee: 'assets/images/ringImage.png',
-                      text: 'Rings',
-                      tap: () {
-                        Get.to(() => const RingsScreen());
-                      }),
-                ],
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Row(
-                children: [
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CategoryButton(
-                      imagee: 'assets/images/ringImage.png',
-                      text: 'Rings',
-                      tap: () {
-                        Get.to(() => const RingsScreen());
-                      }),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CategoryButton(
-                      imagee: 'assets/images/ringImage.png',
-                      text: 'Rings',
-                      tap: () {
-                        Get.to(() => const RingsScreen());
-                      }),
-                ],
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Row(
-                children: [
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CategoryButton(
-                      imagee: 'assets/images/ringImage.png',
-                      text: 'Rings',
-                      tap: () {
-                        Get.to(() => const RingsScreen());
-                      }),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  CategoryButton(
-                      imagee: 'assets/images/ringImage.png',
-                      text: 'Rings',
-                      tap: () {
-                        Get.to(() => const RingsScreen());
-                      }),
-                ],
+              Container(
+                padding: const EdgeInsets.all(2),
+                child: const Image(
+                    image: AssetImage('assets/images/lady_image.png')),
               ),
             ],
-          ),
-          const SizedBox(
-            height: 100,
-          ),
-          const Divider(
-            color: Colors.white,
-            thickness: 1,
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          const Text(
-            '                                               @Nyasa',
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(
-            height: 100,
-          ),
+          )
         ],
       ),
     );
